@@ -130,31 +130,6 @@
     
     
     <entry>
-      <title>ajax</title>
-      <link href="/2023/05/08/markdown/axios/"/>
-      <url>/2023/05/08/markdown/axios/</url>
-      
-        <content type="html"><![CDATA[<h2 id="axios"><a href="#axios" class="headerlink" title="axios"></a>axios</h2><span id="more"></span><blockquote><ul><li>服务器和客户端传输数据</li><li>动态展示数据</li></ul></blockquote><pre><code> &lt;script&gt;// 创建 XMLHttpRequest 对象var xhttp = new XMLHttpRequest();// 发送请求xhttp.open("GET", "http://localhost:8080/ServletAjax");xhttp.send();//获取响应xhttp.onreadystatechange = function() {    if (this.readyState == 4 &amp;&amp; this.status == 200) {        alert(this.responseText)    }};&lt;/script&gt;</code></pre><h4 id="axios-1"><a href="#axios-1" class="headerlink" title="axios"></a>axios</h4><p>首先引入axios.js包<br><strong>axios-0.18.0.js</strong></p><pre><code>&lt;script src="js/axios-0.18.0.js"&gt;</code></pre><p>其次</p><pre><code> /*  axios({    method:"get",    url:"http://localhost:8080/axiosServlet?username=zhangsan"}).then(function (response) {    alert(response.data);})*/axios({    method:"post",    url:"http://localhost:8080/axiosServlet",    data:"username=zhangsan"}).then(function (response) {    alert(response.data);})</code></pre><h5 id="例子，两种不同方式动态获取用户名是否存在"><a href="#例子，两种不同方式动态获取用户名是否存在" class="headerlink" title="例子，两种不同方式动态获取用户名是否存在"></a>例子，两种不同方式动态获取用户名是否存在</h5><p>判断是否有这个用户名，然后返回true或者false<br>axios接收响应，<strong>因为””+flag  flag是boolean类型没有放在字符池中，==需要在字符常量池中来找，toString可以将它放在里面，记住一定要.toString或者后面不要用 “true”</strong></p><pre><code>&lt;span id="username_err" class="err_msg" style="display: none"&gt;用户名已存在&lt;/span&gt;&lt;script src="js/axios-0.18.0.js"&gt; &lt;/script&gt; &lt;script&gt;document.getElementById("username").onblur= function () { var username = this.value;    // 创建 XMLHttpRequest 对象   /* var xhttp = new XMLHttpRequest();    // 发送请求    xhttp.open("GET", "http://localhost:8080/registerServlet?username=" + username);    xhttp.send();    //获取响应    xhttp.onreadystatechange = function () {        if (this.readyState == 4 &amp;&amp; this.status == 200) {            if (this.responseText == "true") {                //用户名存在显示提示信息                document.getElementById("username_err").style.display='';            }            else {                //用户名不存在显示提示信息                document.getElementById("username_err").style.display='none';            }        }    };*/axios({        method:"get",        url:"http://localhost:8080/registerServlet?username="+username    }).then(function (response) {        var s = (response.data).toString();    if ( s == "true") {        //用户名存在显示提示信息        document.getElementById("username_err").style.display='';    }    else {        //用户名不存在显示提示信息        document.getElementById("username_err").style.display='none';    }    })}&lt;/script&gt;</code></pre><h4 id="Json"><a href="#Json" class="headerlink" title="Json"></a>Json</h4><pre><code>&lt;script&gt;var json = {    "name": "kang",    "id": 4,    "aihao": ["游泳","足球"]};alert(json.aihao);&lt;/script&gt;</code></pre>]]></content>
-      
-      
-      <categories>
-          
-          <category> 其它 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 其它 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>JDBC</title>
       <link href="/2023/05/08/markdown/jdbc/"/>
       <url>/2023/05/08/markdown/jdbc/</url>
@@ -297,6 +272,31 @@
         <tags>
             
             <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ajax</title>
+      <link href="/2023/05/08/markdown/axios/"/>
+      <url>/2023/05/08/markdown/axios/</url>
+      
+        <content type="html"><![CDATA[<h2 id="axios"><a href="#axios" class="headerlink" title="axios"></a>axios</h2><span id="more"></span><blockquote><ul><li>服务器和客户端传输数据</li><li>动态展示数据</li></ul></blockquote><pre><code> &lt;script&gt;// 创建 XMLHttpRequest 对象var xhttp = new XMLHttpRequest();// 发送请求xhttp.open("GET", "http://localhost:8080/ServletAjax");xhttp.send();//获取响应xhttp.onreadystatechange = function() {    if (this.readyState == 4 &amp;&amp; this.status == 200) {        alert(this.responseText)    }};&lt;/script&gt;</code></pre><h4 id="axios-1"><a href="#axios-1" class="headerlink" title="axios"></a>axios</h4><p>首先引入axios.js包<br><strong>axios-0.18.0.js</strong></p><pre><code>&lt;script src="js/axios-0.18.0.js"&gt;</code></pre><p>其次</p><pre><code> /*  axios({    method:"get",    url:"http://localhost:8080/axiosServlet?username=zhangsan"}).then(function (response) {    alert(response.data);})*/axios({    method:"post",    url:"http://localhost:8080/axiosServlet",    data:"username=zhangsan"}).then(function (response) {    alert(response.data);})</code></pre><h5 id="例子，两种不同方式动态获取用户名是否存在"><a href="#例子，两种不同方式动态获取用户名是否存在" class="headerlink" title="例子，两种不同方式动态获取用户名是否存在"></a>例子，两种不同方式动态获取用户名是否存在</h5><p>判断是否有这个用户名，然后返回true或者false<br>axios接收响应，<strong>因为””+flag  flag是boolean类型没有放在字符池中，==需要在字符常量池中来找，toString可以将它放在里面，记住一定要.toString或者后面不要用 “true”</strong></p><pre><code>&lt;span id="username_err" class="err_msg" style="display: none"&gt;用户名已存在&lt;/span&gt;&lt;script src="js/axios-0.18.0.js"&gt; &lt;/script&gt; &lt;script&gt;document.getElementById("username").onblur= function () { var username = this.value;    // 创建 XMLHttpRequest 对象   /* var xhttp = new XMLHttpRequest();    // 发送请求    xhttp.open("GET", "http://localhost:8080/registerServlet?username=" + username);    xhttp.send();    //获取响应    xhttp.onreadystatechange = function () {        if (this.readyState == 4 &amp;&amp; this.status == 200) {            if (this.responseText == "true") {                //用户名存在显示提示信息                document.getElementById("username_err").style.display='';            }            else {                //用户名不存在显示提示信息                document.getElementById("username_err").style.display='none';            }        }    };*/axios({        method:"get",        url:"http://localhost:8080/registerServlet?username="+username    }).then(function (response) {        var s = (response.data).toString();    if ( s == "true") {        //用户名存在显示提示信息        document.getElementById("username_err").style.display='';    }    else {        //用户名不存在显示提示信息        document.getElementById("username_err").style.display='none';    }    })}&lt;/script&gt;</code></pre><h4 id="Json"><a href="#Json" class="headerlink" title="Json"></a>Json</h4><pre><code>&lt;script&gt;var json = {    "name": "kang",    "id": 4,    "aihao": ["游泳","足球"]};alert(json.aihao);&lt;/script&gt;</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 其它 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 其它 </tag>
             
         </tags>
       

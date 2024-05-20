@@ -133,25 +133,6 @@
   </entry>
   
   <entry>
-    <title>ajax</title>
-    <link href="http://jiuwei2003.github.io/2023/05/08/markdown/axios/"/>
-    <id>http://jiuwei2003.github.io/2023/05/08/markdown/axios/</id>
-    <published>2023-05-08T14:11:36.000Z</published>
-    <updated>2024-05-20T05:22:05.284Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;axios&quot;&gt;&lt;a href=&quot;#axios&quot; class=&quot;headerlink&quot; title=&quot;axios&quot;&gt;&lt;/a&gt;axios&lt;/h2&gt;</summary>
-    
-    
-    
-    <category term="其它" scheme="http://jiuwei2003.github.io/categories/%E5%85%B6%E5%AE%83/"/>
-    
-    
-    <category term="其它" scheme="http://jiuwei2003.github.io/tags/%E5%85%B6%E5%AE%83/"/>
-    
-  </entry>
-  
-  <entry>
     <title>JDBC</title>
     <link href="http://jiuwei2003.github.io/2023/05/08/markdown/jdbc/"/>
     <id>http://jiuwei2003.github.io/2023/05/08/markdown/jdbc/</id>
@@ -262,6 +243,25 @@
     
     
     <category term="Java" scheme="http://jiuwei2003.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ajax</title>
+    <link href="http://jiuwei2003.github.io/2023/05/08/markdown/axios/"/>
+    <id>http://jiuwei2003.github.io/2023/05/08/markdown/axios/</id>
+    <published>2023-05-08T14:11:36.000Z</published>
+    <updated>2024-05-20T05:22:05.284Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;axios&quot;&gt;&lt;a href=&quot;#axios&quot; class=&quot;headerlink&quot; title=&quot;axios&quot;&gt;&lt;/a&gt;axios&lt;/h2&gt;</summary>
+    
+    
+    
+    <category term="其它" scheme="http://jiuwei2003.github.io/categories/%E5%85%B6%E5%AE%83/"/>
+    
+    
+    <category term="其它" scheme="http://jiuwei2003.github.io/tags/%E5%85%B6%E5%AE%83/"/>
     
   </entry>
   

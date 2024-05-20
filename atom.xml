@@ -6,7 +6,7 @@
   <link href="http://jiuwei2003.github.io/atom.xml" rel="self"/>
   
   <link href="http://jiuwei2003.github.io/"/>
-  <updated>2024-05-20T05:22:05.277Z</updated>
+  <updated>2024-05-20T12:39:21.221Z</updated>
   <id>http://jiuwei2003.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Freemarker和MinIO存储博客文章</title>
+    <link href="http://jiuwei2003.github.io/2024/05/20/blog/"/>
+    <id>http://jiuwei2003.github.io/2024/05/20/blog/</id>
+    <published>2024-05-20T12:25:00.000Z</published>
+    <updated>2024-05-20T12:39:21.221Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;运用-Freemarker-模板引擎为文章生成静态文件，将文件存放在分布式文件系统-MinIO-中，以及-Non-XML-response-from-server问题的解决&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Java" scheme="http://jiuwei2003.github.io/categories/Java/"/>
+    
+    
+    <category term="Java" scheme="http://jiuwei2003.github.io/tags/Java/"/>
+    
+  </entry>
   
   <entry>
     <title>test_my_site</title>
@@ -104,33 +129,6 @@
     
     
     <category term="其它" scheme="http://jiuwei2003.github.io/tags/%E5%85%B6%E5%AE%83/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>typora-vue-theme主题介绍</title>
-    <link href="http://jiuwei2003.github.io/2023/09/07/hello/"/>
-    <id>http://jiuwei2003.github.io/2023/09/07/hello/</id>
-    <published>2023-09-07T01:25:00.000Z</published>
-    <updated>2024-05-17T11:10:20.642Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;My name is</summary>
-        
-      
-    
-    
-    
-    <category term="Markdown" scheme="http://jiuwei2003.github.io/categories/Markdown/"/>
-    
-    
-    <category term="Typora" scheme="http://jiuwei2003.github.io/tags/Typora/"/>
-    
-    <category term="Markdown" scheme="http://jiuwei2003.github.io/tags/Markdown/"/>
     
   </entry>
   
